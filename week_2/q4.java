@@ -20,7 +20,17 @@ public class q4 {
                 sum = sum +arr[i][j];
                 product = product*arr[i][j];
             }
-            System.out.println("Sum and product of row "+i+" are: "+sum+" "+product);
+            System.out.println("Sum and product of row "+ i +" are: "+sum+" "+product);
+        }
+
+        for (int j = 0; j < col; j++) {
+            int sum = 0;
+            int product = 1;
+            for (int i = 0; i < row; i++) {
+                sum += arr[i][j];
+                product *= arr[i][j];
+            }
+            System.out.println("Sum and product of column " + j + " are: " + sum + " " + product);
         }
         obj.close();
     }
