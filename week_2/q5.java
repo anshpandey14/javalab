@@ -1,9 +1,9 @@
 import java.util.Scanner;
-class Number{
+class q5{
 
     private double num;
 
-    public Number(double num) {
+    public q5(double num) {
         this.num = num;
     }
     
@@ -81,7 +81,7 @@ class Number{
         Scanner obj = new Scanner(System.in);
         System.out.println("Enter a number");
         double n = obj.nextDouble();
-        Number n1 = new Number(n);
+        q5 n1 = new q5(n);
         System.out.println("Number is zero: "+n1.isZero());
         System.out.println("Number is positive: "+n1.isPositive());
         System.out.println("Number is negative: "+n1.isNegative());
