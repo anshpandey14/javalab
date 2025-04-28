@@ -33,6 +33,5 @@ public class q4 {
             System.out.println("Sum and product of column " + j + " are: " + sum + " " + product);
         }
         obj.close();
-    }
-    
+    } 
 }

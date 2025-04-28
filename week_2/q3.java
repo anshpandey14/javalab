@@ -21,6 +21,5 @@ public class q3 {
         }
         System.out.println("Maximum and minimum elemts in the array are: "+maxi+" "+mini);
         obj.close();
-    }
-    
+    }   
 }
