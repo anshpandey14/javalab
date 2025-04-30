@@ -11,10 +11,6 @@ public class Person {
     }
 
     Person(){
-        // this.name = name;
-        // this.age = age;
-        // System.out.println("Name is: "+this.name);
-        // System.out.println("Age is: "+this.age);
     }
 
     public static void main(String[] args) {
@@ -26,5 +22,4 @@ public class Person {
         System.out.println("name is: "+p1.name);
         System.out.println("age is: "+p1.age);
     }
-
 }
