@@ -1,4 +1,4 @@
-package basics;
+// package basics;
 import java.util.Scanner;
 public class kmtomiles {
     public static void main(String args[]){

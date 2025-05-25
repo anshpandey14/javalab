@@ -26,5 +26,6 @@ public class elementfound {
         else{
             System.out.println("Not found");
         }
+        obj.close();
     }
 }

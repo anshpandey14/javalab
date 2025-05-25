@@ -1,17 +1,19 @@
 public class thisa {
     public static void main(String[] args) {
         Test s1 = new Test();
-        s1.setName = "Rahul";
-        s1.displayname();
+        s1.setName("Rahul");
+        s1.displayName();
     }
 }
 
-class Test{
-    public static void main(String[] args) {
-        setName(String name);
+class Test {
+    private String name;
+
+    public void setName(String name) {
         this.name = name;
     }
-    void displayname(){
-        System.out.println("name is: "+ this.name);
+
+    public void displayName() {
+        System.out.println("Name is: " + this.name);
     }
 }

@@ -1,4 +1,4 @@
-package basics;
+// package basics;// 
 import java.util.Scanner;
 public class swap {
     public static void main(String args[]){

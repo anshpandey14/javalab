@@ -1,4 +1,4 @@
-package functions;
+// package functions;
 import java.util.Scanner;
 public class sumdigit {
     public static void main(String[] args) {

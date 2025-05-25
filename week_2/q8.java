@@ -28,11 +28,11 @@ public class q8 {
         q8.displayStaticCounter();
 
         q8 obj1 = new q8();
-        obj1.displayStaticCounter();
+        q8.displayStaticCounter();
         obj1.displayInstanceCounter();
 
         q8 obj2 = new q8();
-        obj2.displayStaticCounter();
+        q8.displayStaticCounter();
         obj2.displayInstanceCounter();
 
         q8.displayStaticCounter();

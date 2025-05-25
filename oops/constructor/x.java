@@ -12,8 +12,8 @@ public class x{
 
     public static void main(String[] args){
         System.out.println("let's start.");
-        x x1 =new x(3);
+        new x(3);
         new x();
-        new x(0.05f);
+        new x(5);
     }
 } 

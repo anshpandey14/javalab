@@ -26,5 +26,6 @@ public class elementsearch2d {
         else{
             System.out.println("Not found");
         }
+        obj.close();
     }
 }

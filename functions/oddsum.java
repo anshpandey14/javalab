@@ -1,4 +1,4 @@
-package functions;
+// package functions;
 import java.util.Scanner;
 public class oddsum {
     public static void main(String[] args) {
