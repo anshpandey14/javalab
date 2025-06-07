@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Viewer</title>
+</head>
+<body>
+  <h1>Employee List</h1>
+  <ul id="list"></ul>
+
+  <h2>Add Employee</h2>
+  <form id="empForm">
+    <input placeholder="Name" id="name" required />
+    <input placeholder="Department" id="dept" required />
+    <input placeholder="Salary" id="salary" required type="number" />
+    <button type="submit">Add</button>
+  </form>
+
+  <script>
+    function fetchEmployees() {
+      fetch("/api/employees")
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("list").innerHTML = data.map(emp =>
+            `<li>${emp.name} - ${emp.department} - $${emp.salary}</li>`
+          ).join("");
+        });
+    }
+
+    document.getElementById("empForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const dept = document.getElementById("dept").value;
+      const salary = document.getElementById("salary").value;
+
+      fetch("/api/employees", {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, department: dept, salary: parseFloat(salary) })
+      }).then(() => {
+        fetchEmployees();
+        this.reset();
+      });
+    });
+
+    fetchEmployees();
+  </script>
+</body>
+</html>
